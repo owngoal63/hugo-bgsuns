@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Page Styles */
+
+.firebox {
+  position:relative;
+  width:100%;
+  text-align: center;
+  filter:url(#fire)
+}
+
+.glow {
+  position:relative;
+  color:#ffeb3b;
+  font-weight: 600;
+  -webkit-box-reflect: below -2px linear-gradient(transparent, #0004);
+  text-shadow: 0 0 10px #ff8c3b,
+              0 0 40px #ff8c3b,
+              0 0 80px #ff8c3b,
+              0 0 160px #ff8c3b,
+              0 0 240px #ff8c3b;
+}
+
+/* Player Card Styles */
+
+.card {
+    height: 25rem;
+    width: 15rem;
+    background-color: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+.card__img-container {
+    position: relative;
+    width: 100%;
+    height: 50%;    
+    z-index: 1;
+}
+
+.card__overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.card__overlay:hover {
+    display: none;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__caption {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(to bottom right,rgb(39, 39, 39), black);
+    border-radius: 0 0 10px 10px;
+}
+
+.card__name {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card__nickname {
+    color: lightgrey;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Player Detail Styles */
+
+.containerx .box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    /* background: #ffff00; */
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  
+  }
+  
+  .containerx .box .imgBox {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .containerx .box .imgBox img {
+    transition: transform 2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .containerx .box:hover .imgBox img {
+    transform: scale(1.2);
+  }
+  
+  .containerx .box .details {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,.7);
+    transform: scaleY(0);
+    transition: transform 1s;
+  
+  }
+  
+  .containerx .box:hover .details {
+    transform: scaleY(1);
+    border-radius: 5px;
+  }
+  
+  .containerx .box .details .content {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    
+  }
+  
+  .containerx .box .details .content h2 {
+    margin:0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* color:#ff0; */
+    color:rgb(223,105,26);
+  }
+  
+  
+  .containerx .box .details .content h5 {
+    margin-top:2px;
+    padding: 0;
+    font-size: 14px;
+    color:#fff;
+    letter-spacing: 1.1px;
+    line-height: 1.8;
+  }
+
+  .player-bg-img {
+    height:35rem;
+    padding-bottom: 0; 
+  }
+
+  .player-overlay {
+    padding-top: 0;
+  }
+

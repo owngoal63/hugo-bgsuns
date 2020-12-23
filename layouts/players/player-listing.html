@@ -1,0 +1,17 @@
+<!-- <div class="card__overlay"></div> -->
+  <figure class="card__img-container">
+    {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+    {{ if $featured_image }}
+      <img src="{{ $featured_image }}" class="card__image" alt="image from {{ .Title }}">
+      {{ end }}  
+  </figure>
+  <figcaption class="card__caption">
+    <h1 class="card__name">{{ if .Params.Playername }}{{ .Params.Playername }}{{ end }}</h1>
+    <p class="card__nickname">{{ if .Params.Nickname }}{{ .Params.Nickname }}{{ end }}</p>
+    <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-purple" href="{{ .Permalink }}">Details</a>
+  </figcaption>
+
+
+
+
+
